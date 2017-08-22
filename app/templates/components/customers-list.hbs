@@ -1,4 +1,4 @@
-<h3 class="list-header" {{action 'toggleListDetail'}}>{{customer.title}}</h3>
+<h3 class="list-header" {{action 'toggleCustomerDetail'}}>{{customer.title}}</h3>
 <form {{action 'createInfo' on='submit' }}>
    {{input placeholder='New Info'
      value=newInfo.content
@@ -6,7 +6,7 @@
  </form>
 
 <ul>
-  {{#each list.infos as |info|}}
+  {{#each customer.infos as |info|}}
   {{customer-list/info
        info=info
        toggleItemDone='toggleInfoDone'

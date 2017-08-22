@@ -12,10 +12,6 @@ Router.map(function () {
   this.route('users');
   this.route('customers');
   this.route('customer', { path: '/customers/:customer_id' });
-  this.route('infos');
-  this.route('info', { path: '/infos/:info_id' });
-  this.route('notes');
-  this.route('note', { path: '/notes/:note_id' });
   this.route('new');
   this.route('new');
 
