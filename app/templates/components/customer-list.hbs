@@ -1,0 +1,15 @@
+<h3 class="customer-header" {{action 'toggleListDetail'}}>{{customer.title}}</h3>
+<form {{action 'createInfo' on='submit' }}>
+   {{input placeholder='New Info'
+     value=newItem.content
+   }}
+ </form>
+
+<ul>
+  {{#each customer.infos as |info|}}
+  {{customer-customer/info
+       info=info
+       toggleItemDone='toggleInfoDone'
+       deleteInfo='deleteInfo'}}
+  {{/each}}
+</ul>
