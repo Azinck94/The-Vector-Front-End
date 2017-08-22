@@ -10,10 +10,10 @@ export default Ember.Route.extend({
       info.toggleProperty('done');
       info.save();
     },
-    deleteItem(info) {
+    deleteInfo (info) {
       info.destroyRecord();
     },
-    createItem (info){
+    createInfo (info) {
       let infoRecord = this.get('store').createRecord('info', info);
       infoRecord.save();
      }
