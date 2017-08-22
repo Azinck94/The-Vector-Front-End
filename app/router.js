@@ -10,9 +10,15 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('customers', function() {
-    this.route('customer', { path: ':customer_id'}); //customer/3
-    this.route('new');
+  this.route('customers');
+  this.route('customer', { path: '/customers/:customer_id' });
+  this.route('infos');
+  this.route('info', { path: '/infos/:info_id' });
+  this.route('notes');
+  this.route('note', { path: '/notes/:note_id' });
+  this.route('new');
+  this.route('new');
+
   });
   this.route('customer');
 });

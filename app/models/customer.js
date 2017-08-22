@@ -4,4 +4,5 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   hidden: DS.attr('boolean'),
   infos: DS.hasMany('info'),
+  notes: DS.hasMany('note'),
 });

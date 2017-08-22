@@ -1,1 +1,12 @@
-{{outlet}}
+
+{{customer-list/customer-form createCustomer="createCustomer"}}
+
+ {{#each model as |list|}}
+
+{{customer-list/card customer=customer}}
+<button type="button" class="btn btn-danger btn-sm" {{action 'deleteCustomer'}}>Delete List</button>
+
+
+{{/each}}
+
+{{#link-to "index"}} Go Home {{/link-to}}
