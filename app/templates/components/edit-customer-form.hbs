@@ -1,1 +1,6 @@
-{{yield}}
+<h3>Edit Customer Name</h3>
+<form {{action 'editCustomer' on='submit'}} >
+  {{input placeholder= 'New Customer Name' value=customer.title}}
+  <button type='submit'>Save</button>
+</form>
+{{#link-to "index"}} Go Home {{/link-to}}
