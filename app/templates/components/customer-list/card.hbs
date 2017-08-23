@@ -2,3 +2,7 @@
 <h3>{{customer.title}}</h3>
 {{/link-to}}
 <button type="button" class="btn btn-danger btn-sm" {{action 'deleteCustomer'}}>Delete Customer</button>
+
+{{#link-to 'edit' customer}}
+<button> Edit Customer Name</button>
+{{/link-to}}
