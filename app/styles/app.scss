@@ -1,2 +1,33 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+
+#navigation  {
+  text-align: center;
+  background-color: black;
+  color: lime;
+  margin: 0px;
+  padding: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px black,
+               2px 2px 1px lime;
+}
+
+#navigation li {
+  text-indent: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+#navigation >li:hover {
+  background-color: lime;
+  cursor: pointer;
+}
+
+#navigation li a {
+  display: block;
+  text-decoration: none;
+  color: lime;
+  text-align: center;
+}
