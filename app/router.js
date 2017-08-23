@@ -14,7 +14,7 @@ Router.map(function () {
   this.route('customer', { path: '/customers/:customer_id' });
   this.route('new');
   this.route('new');
-  this.route('edit');
+    this.route('edit', { path: '/customers/:customer_id/edit' });
 });
 
 export default Router;

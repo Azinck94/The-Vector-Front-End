@@ -10,8 +10,8 @@
   padding: 5px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px 1px black,
-               2px 2px 1px lime;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
 }
 
 #navigation li {
@@ -30,4 +30,60 @@
   text-decoration: none;
   color: lime;
   text-align: center;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
+}
+
+
+h1 {
+  background-color: black;
+  color: lime;
+  margin: 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
+}
+h2 {
+  background-color: black;
+  color: lime;
+  margin: 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
+}
+
+h6 {
+  background-color: black;
+  color: lime;
+  margin: 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
+}
+
+.ember-view {
+  background-color: black;
+  color: lime;
+  margin: 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
+}
+.container-fluid {
+  background-color: black;
+  color: lime;
+  margin: 0px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1.5px 1.5px 1.5px black,
+               2px 2px 2px lime;
 }
