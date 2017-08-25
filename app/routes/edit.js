@@ -5,9 +5,9 @@ export default Ember.Route.extend({
     return this.get('store').findRecord('customer', params.customer_id);
   },
   actions: {
-   editCustomer (customer) {
+   editExample (example) {
       customer.save();
-      this.transitionTo('customers');
+      this.transitionTo('examples');
     }
   }
 });

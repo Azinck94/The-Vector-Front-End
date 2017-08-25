@@ -5,29 +5,35 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
+        {{!--make these ifs liquid ifs going forward  --}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right" id="subNavigation" >
         {{#if isAuthenticated}}
+        {{#link-to "customers" tagName="li"}}<a href>Customers</a>{{/link-to}}
+        {{#link-to "examples" tagName="li"}}<a href>Examples</a>{{/link-to}}
         <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
         <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
         {{else}}
         {{#link-to "sign-up" tagName="li"}}<a href>Sign Up</a>{{/link-to}}
         {{#link-to "sign-in" tagName="li"}}<a href>Sign In</a>{{/link-to}}
-        {{#link-to "customers" tagName="li"}}<a href>Customers</a>{{/link-to}}
+
         {{/if}}
       </ul>
     </div>
   </div>
 </nav>
 
-<h1>Welcome to My App!</h1>
+<h1>Welcome to Ember</h1>
+
+{{!-- <div id="liquid-bind-demo">
+  {{liquid-bind hours}}:{{liquid-bind minutes}}:{{liquid-bind seconds}}
+</div> --}}
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="col-md-8 col-md-offset-2">
-  {{liquid-outlet}}
-</div>
+
+{{outlet}}
