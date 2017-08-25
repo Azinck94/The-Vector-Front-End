@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
    editCustomer (customer) {
       customer.save();
-      this.transitionTo('customer');
+      this.transitionTo('customers');
     }
   }
 });

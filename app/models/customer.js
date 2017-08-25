@@ -4,5 +4,5 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   phone: DS.attr('string'),
   email: DS.attr('string'),
-  infos: DS.hasMany('info'),
+  // infos: DS.hasMany('info'),
 });
