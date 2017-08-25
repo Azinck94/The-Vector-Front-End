@@ -1,14 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  newExample: {
-    text: null,
+  newCustomer: {
+    name: null,
     hidden: false
   },
   actions: {
-    createExample () {
-      this.sendAction('createExample', this.get('newExample'))
-      this.set('newExample.text', null);
+    createCustomer () {
+      this.sendAction('createCustomer', this.get('newCustomer'))
+      this.set('newCustomer.name', null);
      }
   }
 });
