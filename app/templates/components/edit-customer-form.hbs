@@ -1,6 +1,9 @@
-<h3>Edit Customer Name</h3>
+<h3>Edit Customer</h3>
 <form {{action 'editCustomer' on='submit'}} >
-  {{input placeholder= 'New List Title' value=list.title}}
+  {{input placeholder= 'New Customer Name' value=customer.name}}
+  {{!-- {{input placeholder= 'New Customer Phone' value=customer.phone}}
+  {{input placeholder= 'New Customer Email' value=customer.email}} --}}
   <button type='submit'>Save</button>
 </form>
+<br>
 {{#link-to "index"}} Go Home {{/link-to}}
