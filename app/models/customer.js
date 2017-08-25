@@ -1,7 +1,8 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  title: DS.attr('string'),
-  hidden: DS.attr('boolean'),
+  name: DS.attr('string'),
+  phone: DS.attr('string'),
+  email: DS.attr('string'),
   infos: DS.hasMany('info'),
 });

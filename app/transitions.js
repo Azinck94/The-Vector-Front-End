@@ -12,6 +12,3 @@
 //   // this.use('crossFade'),
 //   // this.debug()
 //     );
-
-
-}
