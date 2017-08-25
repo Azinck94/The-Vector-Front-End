@@ -1,7 +1,13 @@
 <h3> Add New Customer</h3>
-<form {{action 'createExample' on='submit' }}>
+<form {{action 'createCustomer' on='submit' }}>
     {{input placeholder='New Customer Name'
       value=newCustomer.name
+    }}
+    {{input placeholder='New Customer Phone'
+      value=newCustomer.phone
+    }}
+    {{input placeholder='New Customer Email'
+      value=newCustomer.email
     }}
     <button type="submit" >Save</button>
   </form>
