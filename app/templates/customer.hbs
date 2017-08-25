@@ -1,8 +1,4 @@
-{{customer-list
-    customer=model
-    toggleItemDone='toggleInfoDone'
-    deleteItem='deleteInfo'
-    createItem='createInfo'
-  }}
-
-{{#link-to "index"}} Return Home {{/link-to}}
+<h3>{{model.name}}</h3>
+<h3>{{model.phone}}</h3>
+<h3>{{model.email}}</h3>
+{{#link-to 'customers'}} go back {{/link-to}}

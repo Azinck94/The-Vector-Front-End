@@ -1,13 +1,10 @@
-<h2>Andrew Zinck</h2>
 
-{{customer-list/customer-form createCustomer="createCustomer"}}
+<h2>Customers</h2>
 
- {{#each model as |customer|}}
+{{create-form customer=customer createCustomer='createCustomer'}}
 
-{{customer-list/card deleteCustomer="deleteCustomer" customer=customer}}
-
-
-
+<ul>
+{{#each model as |customer|}}
+  {{customer-list/card customer=customer deleteCustomer='deleteCustomer'}}
 {{/each}}
-
-{{#link-to "index"}} Go Home {{/link-to}}
+</ul>
