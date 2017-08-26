@@ -22,13 +22,15 @@
     "content": "CC­BY­NC­SA 4.0"
   },
   "devDependencies": {
+    "@glimmer/application-pipeline": "^0.8.3",
+    "@glimmer/env": "^0.1.7",
     "active-model-adapter": "^2.1.1",
     "broccoli-asset-rev": "^2.5.0",
     "ember-ajax": "^2.5.3",
     "ember-cli": "^2.10.0",
     "ember-cli-app-version": "^2.0.1",
     "ember-cli-autoprefixer": "^0.6.0",
-    "ember-cli-babel": "^5.2.1",
+    "ember-cli-babel": "^5.2.4",
     "ember-cli-dependency-checker": "^1.3.0",
     "ember-cli-flash": "^1.4.0",
     "ember-cli-htmlbars": "^1.1.1",
@@ -52,8 +54,13 @@
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-jscs": "^3.0.1",
     "grunt-jsonlint": "^1.1.0",
+    "liquid-fire": "^0.28.0",
     "load-grunt-config": "^0.19.2",
     "loader.js": "^4.1.0",
     "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "@glimmer/compiler": "^0.27.0",
+    "typescript": "^2.4.2"
   }
 }
