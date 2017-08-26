@@ -1,4 +1,9 @@
-<h3>{{model.name}}</h3>
-<h3>{{model.phone}}</h3>
-<h3>{{model.email}}</h3>
+<div class="card">
+<div class="card-block">
+    <h1> Name: {{model.name}}</h1>
+  <ul> Phone Number: {{model.phone}} </ul>
+  <ul> Email Address: {{model.email}} </ul>
+</div>
+</div>
+
 {{#link-to 'customers'}} go back {{/link-to}}
