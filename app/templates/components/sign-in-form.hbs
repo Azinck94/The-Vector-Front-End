@@ -1,11 +1,13 @@
+<form class="form-container">
+<div class="form-title"><h2>Sign In</h2></div>
+{{email-input class="form-field" email=credentials.email}}
+{{password-input class="form-field" password=credentials.password}}
 
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
-
-<button type="submit" class="btn btn-primary" {{action "submit"}}>
+<button type="submit" class="submit-button" {{action "submit"}}>
   Sign In
 </button>
 
-<button class="btn btn-default" {{action "reset"}}>
+<button class="submit-button" {{action "reset"}}>
   Cancel
 </button>
+</form>
