@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  show:false,
   newCustomer: {
     name: null,
     email: null,
@@ -13,6 +14,9 @@ export default Ember.Component.extend({
       this.set('newCustomer.name', null);
       this.set('newCustomer.phone', null);
       this.set('newCustomer.email', null);
-     }
+    },
+    pressed () {
+      this.toggleProperty('show');
+    }
   }
 });

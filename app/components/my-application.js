@@ -5,10 +5,10 @@ export default Ember.Component.extend({
 
   user: Ember.computed.alias('auth.credentials.email'),
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
-
+  show:false,
   actions: {
     signOut () {
       this.sendAction('signOut');
-    },
-  },
+    }
+  }
 });

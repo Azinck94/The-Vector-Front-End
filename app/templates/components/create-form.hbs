@@ -1,5 +1,7 @@
-<h3> Add New Customer</h3>
-<form {{action 'createCustomer' on='submit' }}>
+<h3> <a href='#' class='button' type="submit" {{action 'pressed'}} >Add New Customer</a> </h3>
+<br>
+{{#if show}}
+<form class="form-container" {{action 'createCustomer' on='submit' }}>
     {{input placeholder='New Customer Name'
       value=newCustomer.name
     }}
@@ -11,3 +13,4 @@
     }}
     <button type="submit" >Save</button>
   </form>
+{{/if}}
