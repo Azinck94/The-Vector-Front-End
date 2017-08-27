@@ -2,15 +2,20 @@
 <br>
 {{#if show}}
 <form class="form-container" {{action 'createCustomer' on='submit' }}>
-    {{input placeholder='New Customer Name'
+  <div class="form-title">Name</div>
+    {{input placeholder='John Doe Inc.'
       value=newCustomer.name
     }}
+    <div class="form-title">Phone</div>
     {{input placeholder='New Customer Phone'
       value=newCustomer.phone
     }}
+    <div class="form-title">Email</div>
     {{input placeholder='New Customer Email'
       value=newCustomer.email
     }}
-    <button type="submit" >Save</button>
+    <div class="submit-container">
+<button class="submit-button" type="submit" value="Submit" >Save</button>
+</div>
   </form>
 {{/if}}
