@@ -1,14 +1,15 @@
 <div class="box">
 <div class="box-block">
 {{#link-to 'customer' customer}}
-<h3>{{customer.name}}</h3>
+<h3 class='nameplate'>{{customer.name}}</h3>
 {{!-- <h3>{{customer.email}}</h3>
 <h3>{{customer.phone}}</h3> --}}
 {{/link-to}}
 </div>
 </div>
 <br>
-<button type="button" class="btn btn-danger btn-sm" {{action 'deleteCustomer'}}>Delete Customer</button>
+{{!-- <button type="button" class="btn btn-danger btn-sm" {{action 'deleteCustomer'}}>Delete Customer</button> --}}
+<a href='#' class='deletebutton' {{action 'deleteCustomer'}}>Delete Customer</a>
 
 {{#link-to 'edit' customer}}
 <a href='#' class='button' type="submit" >Edit Customer</a>
