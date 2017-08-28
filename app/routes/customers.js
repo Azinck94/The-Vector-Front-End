@@ -14,9 +14,15 @@ export default Ember.Route.extend({
           this.get('flashMessages').warning('Customer Added')
         })
     },
-
     deleteCustomer (customer) {
-      customer.destroyRecord();
+      customer.destroyRecord()
+      .then(() => {
+        this.get('flashMessages').warning('Customer Deleted');
+      })
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('You dont have permission to delete this customer');
+      });
      }
   },
 });
