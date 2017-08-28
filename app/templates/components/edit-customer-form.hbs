@@ -1,5 +1,6 @@
-<h3>Edit Customer</h3>
-<form {{action 'editCustomer' on='submit'}} >
+
+<div class="form-title"><h2>Change Password</h2></div>
+<form class ="form-container"{{action 'editCustomer' on='submit'}} >
   {{input placeholder= 'New Customer Name' value=customer.name}}
   {{input placeholder= 'New Customer Phone' value=customer.phone}}
   {{input placeholder= 'New Customer Email' value=customer.email}}
