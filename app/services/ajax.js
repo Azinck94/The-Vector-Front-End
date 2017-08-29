@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import AjaxService from 'ember-ajax/services/ajax';
 
-import ENV from '/The-Vector-Front-End/config/environment';
+import ENV from 'The-Vector-Front-End/config/environment';
 
 export default AjaxService.extend({
   host: ENV.apiHost,
