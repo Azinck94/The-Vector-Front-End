@@ -10,7 +10,7 @@ export default Ember.Component.extend({
   },
   actions: {
     toggleInfoDone (info) {
-        return this.sendAction('toggleInfoDone', info)
+        return this.sendAction('toggleInfoDone', info);
     },
     toggleCustomerDetail () {
       return this.toggleProperty('customerDetailHidden');

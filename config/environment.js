@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'The-Vector-Front-End',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -49,7 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/The-Vector-Front-End';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://git.heroku.com/afternoon-beyond-92082.git';
   }
 
   return ENV;

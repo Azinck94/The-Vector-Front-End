@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   },
   actions: {
     createCustomer () {
-      this.sendAction('createCustomer', this.get('newCustomer'))
+      this.sendAction('createCustomer', this.get('newCustomer'));
       this.set('newCustomer.title', null);
      }
   }
