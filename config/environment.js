@@ -51,7 +51,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/The-Vector-Front-End';
     ENV.locationType = 'hash';
-    ENV.apiHost = ' https://afternoon-beyond-92082.herokuapp.com/';
+    ENV.apiHost = 'https://afternoon-beyond-92082.herokuapp.com/';
   }
 
   return ENV;
