@@ -1,8 +1,0 @@
-
-{{create-form customer=customer createCustomer='createCustomer'}}
-<h2>Customers:</h2>
-<ul>
-{{#each model as |customer|}}
-  {{customer-list/card customer=customer deleteCustomer='deleteCustomer'}}
-{{/each}}
-</ul>
