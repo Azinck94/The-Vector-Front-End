@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'The-Vector-Front-End',
+    modulePrefix: 'vector-front',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -50,7 +50,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/The-Vector-Front-End';
+    ENV.rootURL = '/vector-front';
     ENV.locationType = 'hash';
     ENV.apiHost = 'https://afternoon-beyond-92082.herokuapp.com';
   }
