@@ -3,11 +3,9 @@ Screenshot: http://imgur.com/wRP95mM
 User Stories: http://imgur.com/V2TgOZu
 Wireframe: http://imgur.com/TUKqVt1
 
-Explanations of the technologies used
-A couple paragraphs about the general approach you took
-Installation instructions for any dependencies
+I used bootstrap, css, html, ember, and javascript to complete to client side of this application.
 
-I wanted to create an application that allowed users to store and edit data about their customers in an easy to use interface. 
+I wanted to create an application that allowed users to store and edit data about their customers in an easy to use interface. I implemented my past experience from previous solo and group projects in order to produce what I feel has been my smoothest, and most task oriented work flow process to date. I set daily deliverables and always kept the scope of things in focus, managing to cross off my to do list in an extremely methodical yet effective approach. I hit structural and relational requirements early on which was a blessing that allowed me to work towards finishing up new features, and I will roll out the new ability to schedule meetings with customers within the next day or two.  
 
 I had major issues with my deployment but managed to find a workaround by cloning from ember auth template's config/environment.js file and restarting the process from there.
 https://github.com/ga-wdi-boston/capstone-project/issues/830
